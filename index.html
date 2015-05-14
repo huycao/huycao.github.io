@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="VN Typing">
+        <meta name="author" content="Huy Cao">
+        <title>VN Typing</title>
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
+        <script language="javascript" type="text/javascript" src="/js/vntyping.min.js"></script>
+        <script type="text/javascript">
+            VNTYPING.VNID = ["textbody"];
+            VNTYPING.SetMethod(2);
+        </script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <form action="" method="post" name="yourForm">
+            <div class="a">Kiểu đánh: 
+                <input type="radio" name="mode" value="Off" onclick="VNTYPING.SetMethod(0);">OFF 
+                <input type="radio" name="mode" value="Vni" onclick="VNTYPING.SetMethod(1);">VNI  
+                <input type="radio" name="mode" value="Telex" onclick="VNTYPING.SetMethod(2);">TELEX 
+                <input type="radio" name="mode" value="VIQR" onclick="VNTYPING.SetMethod(3);" checked="checked">VIQR
+            </div>
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2"><textarea name="w" cols="" rows="" id="textbody"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input name="" type="button" value="Select All" onclick="w.select();" />
+                    <input name="" type="reset" value="Reset" /></td>
+                    <td align="right">&copy; 2015 VNTyping</td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
